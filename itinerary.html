@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Japan · Jun 11 – Jun 25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Shippori+Mincho:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f2ebdd;
+    --paper-deep: #e8dfcc;
+    --paper-shadow: #d9cdb3;
+    --ink: #1a1613;
+    --ink-soft: #433a30;
+    --ink-faded: #7a6d5a;
+    --crimson: #9b2226;
+    --crimson-deep: #6a1418;
+    --gold: #a07a2a;
+    --indigo: #2c3e5c;
+    --sage: #6b7a54;
+    --rule: rgba(26, 22, 19, 0.15);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* paper grain */
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(160, 122, 42, 0.05), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(155, 34, 38, 0.04), transparent 50%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='4'/><feColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.08 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  ::selection { background: var(--crimson); color: var(--paper); }
+
+  /* ————— HEADER / MASTHEAD ————— */
+  .masthead {
+    padding: 3rem 2rem 1.5rem;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .masthead-top span:nth-child(2) {
+    color: var(--crimson);
+    letter-spacing: 0.3em;
+  }
+
+  .masthead-title {
+    max-width: 1400px;
+    margin: 2rem auto 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+    align-items: end;
+  }
+
+  .title-jp {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 800;
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 0.9;
+    color: var(--ink);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 0.1em;
+  }
+
+  .title-en {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(3.5rem, 9vw, 7.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+
+  .title-en em {
+    font-style: italic;
+    color: var(--crimson);
+    font-weight: 400;
+  }
+
+  .title-en-sub {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    font-style: italic;
+    color: var(--ink-faded);
+    margin-top: 0.8rem;
+    max-width: 36ch;
+  }
+
+  .trip-stamp {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-align: right;
+    color: var(--ink-faded);
+    letter-spacing: 0.12em;
+    line-height: 1.6;
+  }
+
+  .trip-stamp strong {
+    display: block;
+    color: var(--crimson);
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+
+  /* ————— QUICK-FACTS STRIP ————— */
+  .facts {
+    max-width: 1400px;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .fact {
+    padding: 1.25rem 1.5rem;
+    border-right: 1px solid var(--rule);
+  }
+  .fact:last-child { border-right: none; }
+
+  .fact-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 0.4rem;
+  }
+
+  .fact-value {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  .fact-value small {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--ink-faded);
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
+
+  /* ————— LAYOUT: STICKY NAV + TIMELINE ————— */
+  .layout {
+    max-width: 1400px;
+    margin: 4rem auto 0;
+    padding: 0 2rem 6rem;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 4rem;
+    position: relative;
+  }
+
+  nav.day-nav {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    border-left: 1px solid var(--rule);
+    padding-left: 1.25rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+
+  .nav-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  nav.day-nav a {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.45rem 0;
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-size: 0.85rem;
+    transition: color 0.2s, transform 0.2s;
+    border-bottom: 1px dotted transparent;
+  }
+
+  nav.day-nav a:hover {
+    color: var(--crimson);
+    transform: translateX(3px);
+  }
+
+  nav.day-nav a .day-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--ink-faded);
+    letter-spacing: 0.05em;
+  }
+
+  /* ————— TIMELINE / DAYS ————— */
+  .timeline { position: relative; }
+
+  .day {
+    padding: 2.5rem 0 3rem;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+  }
+  .day:first-child { padding-top: 0; }
+  .day:last-child { border-bottom: none; }
+
+  .day-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .day-num-big {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    line-height: 0.85;
+    color: var(--ink);
+    font-variant-numeric: lining-nums;
+  }
+
+  .day-num-big .prefix {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    color: var(--crimson);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .day-title {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+    line-height: 1.2;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  .day-title .date {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--ink-faded);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .base-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 2px;
+    white-space: nowrap;
+    align-self: start;
+  }
+
+  .base-badge.osaka { background: var(--crimson); }
+  .base-badge.kyoto { background: var(--indigo); }
+  .base-badge.hokkaido { background: var(--sage); }
+  .base-badge.tokyo { background: var(--ink); }
+  .base-badge.travel { background: var(--gold); color: var(--ink); }
+
+  /* ————— BLOCKS (morning / afternoon / evening) ————— */
+  .blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .block {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    border-right: 1px solid var(--rule);
+    position: relative;
+  }
+
+  .block:first-child { padding-left: 0; }
+  .block:nth-child(2) { padding-left: 1.5rem; }
+  .block:last-child {
+    padding-left: 1.5rem;
+    border-right: none;
+  }
+
+  .block-time {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 0.8rem;
+  }
+
+  .block-time::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--crimson);
+  }
+
+  .block:nth-child(2) .block-time::before { background: var(--gold); }
+  .block:nth-child(3) .block-time::before { background: var(--indigo); }
+
+  .block-text {
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    line-height: 1.45;
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  .block-text em {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+
+  /* ————— NOTES ————— */
+  .notes {
+    margin-top: 1.8rem;
+    padding: 1.25rem 1.5rem;
+    background: rgba(160, 122, 42, 0.08);
+    border-left: 3px solid var(--gold);
+    position: relative;
+  }
+
+  .notes-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  .notes-text {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  /* ————— FOOTER ————— */
+  footer {
+    border-top: 2px solid var(--ink);
+    padding: 3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+  }
+
+  footer .stamp {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.5rem;
+    color: var(--crimson);
+    letter-spacing: 0.1em;
+    text-transform: none;
+  }
+
+  /* ————— ANIMATION ————— */
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .day {
+    animation: rise 0.6s ease-out both;
+  }
+
+  .day:nth-child(1) { animation-delay: 0.05s; }
+  .day:nth-child(2) { animation-delay: 0.1s; }
+  .day:nth-child(3) { animation-delay: 0.15s; }
+  .day:nth-child(4) { animation-delay: 0.2s; }
+
+  /* ————— RESPONSIVE ————— */
+  @media (max-width: 900px) {
+    .layout {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 0 1.25rem 4rem;
+    }
+    nav.day-nav {
+      position: relative;
+      top: 0;
+      max-height: none;
+      border-left: none;
+      border-top: 1px solid var(--rule);
+      padding: 1.5rem 0 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.2rem 1rem;
+    }
+    .nav-title { grid-column: 1 / -1; }
+    .masthead { padding: 2rem 1.25rem 1rem; }
+    .masthead-title {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .title-jp { writing-mode: horizontal-tb; font-size: 3rem; }
+    .trip-stamp { text-align: left; }
+    .facts {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 1.25rem;
+    }
+    .fact:nth-child(2) { border-right: none; }
+    .fact:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
+    .blocks {
+      grid-template-columns: 1fr;
+    }
+    .block {
+      padding: 1.25rem 0 !important;
+      border-right: none;
+      border-bottom: 1px solid var(--rule);
+    }
+    .block:last-child { border-bottom: none; }
+    .day-header {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    .base-badge { justify-self: start; }
+    footer { flex-direction: column; gap: 1rem; padding: 2rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-top">
+    <span>Itinerary № 01 · Summer '26</span>
+    <span>● In Progress</span>
+    <span>15 Days / 4 Cities</span>
+  </div>
+  <div class="masthead-title">
+    <div class="title-jp">日本</div>
+    <div>
+      <h1 class="title-en">a fortnight<br>in <em>Japan</em></h1>
+      <p class="title-en-sub">Osaka to Kyoto, a northbound detour through Hokkaido, and a long finish in Tokyo — drafted for June.</p>
+    </div>
+    <div class="trip-stamp">
+      Departure<br>
+      <strong>11 JUN 2026</strong>
+      <br><br>
+      Return<br>
+      <strong>25 JUN 2026</strong>
+    </div>
+  </div>
+</header>
+
+<!-- QUICK FACTS -->
+<section class="facts">
+  <div class="fact">
+    <div class="fact-label">Duration</div>
+    <div class="fact-value">15 <small>days on the ground</small></div>
+  </div>
+  <div class="fact">
+    <div class="fact-label">Bases</div>
+    <div class="fact-value">4 <small>Osaka · Kyoto · Hokkaido · Tokyo</small></div>
+  </div>
+  <div class="fact">
+    <div class="fact-label">Season</div>
+    <div class="fact-value">Early summer <small>warm, rainy season tail</small></div>
+  </div>
+  <div class="fact">
+    <div class="fact-label">Pace</div>
+    <div class="fact-value">Medium <small>flex days built in</small></div>
+  </div>
+</section>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <nav class="day-nav">
+    <div class="nav-title">The Days</div>
+    <a href="#day-0"><span class="day-num">D0</span><span>Arrival</span></a>
+    <a href="#day-1"><span class="day-num">D1</span><span>Osaka core</span></a>
+    <a href="#day-2"><span class="day-num">D2</span><span>Nara day trip</span></a>
+    <a href="#day-3"><span class="day-num">D3</span><span>Universal Studios</span></a>
+    <a href="#day-4"><span class="day-num">D4</span><span>Kyoto arrival</span></a>
+    <a href="#day-5"><span class="day-num">D5</span><span>Fushimi &amp; Higashiyama</span></a>
+    <a href="#day-6"><span class="day-num">D6</span><span>Arashiyama</span></a>
+    <a href="#day-7"><span class="day-num">D7</span><span>Kinkaku-ji &amp; Nijo</span></a>
+    <a href="#day-8"><span class="day-num">D8</span><span>Fly to Hokkaido</span></a>
+    <a href="#day-9"><span class="day-num">D9</span><span>Hokkaido full day</span></a>
+    <a href="#day-10"><span class="day-num">D10</span><span>Shinkansen · Tokyo</span></a>
+    <a href="#day-11"><span class="day-num">D11</span><span>Tokyo neighborhoods</span></a>
+    <a href="#day-12"><span class="day-num">D12</span><span>Hakone day trip</span></a>
+    <a href="#day-13"><span class="day-num">D13</span><span>DisneySea</span></a>
+    <a href="#day-14"><span class="day-num">D14</span><span>Departure</span></a>
+  </nav>
+
+  <main class="timeline">
+
+    <!-- DAY 0 -->
+    <article class="day" id="day-0">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 00</span>00</div>
+        <div class="day-title"><span class="date">Wed · Jun 11 · 2026</span>Arrival in Osaka</div>
+        <div class="base-badge osaka">Osaka</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text"><em>Flying</em></div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text"><em>Flying</em></div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Land in Osaka — late snack and convenience-store run near the hotel.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Arrival around 9:35 PM. Keep the night easy — a 7-Eleven onigiri and a bath.</div>
+      </div>
+    </article>
+
+    <!-- DAY 1 -->
+    <article class="day" id="day-1">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 01</span>01</div>
+        <div class="day-title"><span class="date">Thu · Jun 12 · 2026</span>Osaka, in full</div>
+        <div class="base-badge osaka">Osaka</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Osaka Castle and the surrounding park.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Umeda for shopping and cafes.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Dotonbori — street food, neon, canal walk.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">The main Osaka day. No tickets needed — just pace yourself for Dotonbori at night.</div>
+      </div>
+    </article>
+
+    <!-- DAY 2 (Jun 13, Nara day trip) -->
+    <article class="day" id="day-2">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 02</span>02</div>
+        <div class="day-title"><span class="date">Fri · Jun 13 · 2026</span>Day trip · Nara</div>
+        <div class="base-badge osaka">Osaka</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Train to Nara — Tōdai-ji and the Great Buddha.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Nara Park (the deer) and Kasuga Taisha's stone lanterns.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Return to Osaka for a quieter dinner near the hotel.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Kintetsu line is the easiest. Deer-cracker sellers stake out the park entrances — bow back.</div>
+      </div>
+    </article>
+
+    <!-- DAY 3 (Jun 14, USJ) -->
+    <article class="day" id="day-3">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 03</span>03</div>
+        <div class="day-title"><span class="date">Sat · Jun 14 · 2026</span>Universal Studios Japan</div>
+        <div class="base-badge osaka">Osaka</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">USJ gates — head to the most popular rides first.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Rest of the park. Use Express Pass windows strategically.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">USJ until close or an early return for a quieter night.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Optional day — only commit if tickets and Express Pass are booked in advance. Saturdays get crushed.</div>
+      </div>
+    </article>
+
+    <!-- DAY 4 (Jun 15, Kyoto arrival) -->
+    <article class="day" id="day-4">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 04</span>04</div>
+        <div class="day-title"><span class="date">Sun · Jun 15 · 2026</span>Osaka → Kyoto</div>
+        <div class="base-badge travel">Transit → Kyoto</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Check out. Travel Osaka → Kyoto. Drop bags at the new hotel.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Nishiki Market — "Kyoto's kitchen." Graze.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Gion stroll at dusk — lanterns come on along Hanamikoji.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">An easy arrival day. Kyoto opens slowly; don't over-schedule.</div>
+      </div>
+    </article>
+
+    <!-- DAY 5 (Jun 16) -->
+    <article class="day" id="day-5">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 05</span>05</div>
+        <div class="day-title"><span class="date">Mon · Jun 16 · 2026</span>Inari, Higashiyama, Pontocho</div>
+        <div class="base-badge kyoto">Kyoto</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Fushimi Inari — early start to beat the crowds on the torii paths.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Kiyomizu-dera and a walk down Sannenzaka / Ninenzaka.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Dinner along Pontocho Alley, facing the Kamo River.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Inari is free and open 24/7 — arriving before 8 AM is the difference between magic and a queue.</div>
+      </div>
+    </article>
+
+    <!-- DAY 6 (Jun 17) -->
+    <article class="day" id="day-6">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 06</span>06</div>
+        <div class="day-title"><span class="date">Tue · Jun 17 · 2026</span>Arashiyama</div>
+        <div class="base-badge kyoto">Kyoto</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Arashiyama Bamboo Grove at opening.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Tenryū-ji temple garden and the Hozu-gawa riverside.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Optional: Sagano Scenic Railway before heading back to central Kyoto.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Sagano Railway books up — reserve a day or two ahead if you want it.</div>
+      </div>
+    </article>
+
+    <!-- DAY 7 (Jun 18) -->
+    <article class="day" id="day-7">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 07</span>07</div>
+        <div class="day-title"><span class="date">Wed · Jun 18 · 2026</span>Gold, gravel, shogun</div>
+        <div class="base-badge kyoto">Kyoto</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Kinkaku-ji — the Golden Pavilion.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Ryōan-ji's rock garden, then Nijō Castle's nightingale floors.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Relaxed evening — rest up before the Hokkaido flight.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Kinkaku-ji and Ryōan-ji are on the same bus route. Hit both in one arc, then Nijō on the way back.</div>
+      </div>
+    </article>
+
+    <!-- DAY 8 (Jun 19) -->
+    <article class="day" id="day-8">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 08</span>08</div>
+        <div class="day-title"><span class="date">Thu · Jun 19 · 2026</span>Fly to Hokkaido</div>
+        <div class="base-badge travel">Transit → Hokkaido</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Fly Kyoto / Osaka (ITM or KIX) → Hokkaido (CTS).</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Arrive, transfer, and check in.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Explore nearby, then a Hokkaido dinner — miso ramen, or the night's market.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Book the flight early — Peach, ANA, and JAL all fly this. ITM (Itami) is usually a shorter transit than KIX.</div>
+      </div>
+    </article>
+
+    <!-- DAY 9 (Jun 20) -->
+    <article class="day" id="day-9">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 09</span>09</div>
+        <div class="day-title"><span class="date">Fri · Jun 20 · 2026</span>Hokkaido, full day</div>
+        <div class="base-badge hokkaido">Hokkaido</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Full day out — pick one region and commit (Sapporo, Otaru, or Noboribetsu).</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Sightseeing and Hokkaido food — seafood, dairy, sweets.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Second night in Hokkaido. Sake and something warm.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Hokkaido is large — pick one theme (city food / coast / onsen) rather than trying to cover everything in 36 hours.</div>
+      </div>
+    </article>
+
+    <!-- DAY 10 (Jun 21) -->
+    <article class="day" id="day-10">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 10</span>10</div>
+        <div class="day-title"><span class="date">Sat · Jun 21 · 2026</span>Shinkansen to Tokyo</div>
+        <div class="base-badge travel">Transit → Tokyo</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Check out of the Hokkaido hotel.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Shinkansen south — the Hayabusa down to Tokyo Station.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">First Tokyo night — something low-key near the hotel.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Hayabusa is the fastest option south — reserved seats only. Book ahead via EKINET or SmartEX.</div>
+      </div>
+    </article>
+
+    <!-- DAY 11 (Jun 22) -->
+    <article class="day" id="day-11">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 11</span>11</div>
+        <div class="day-title"><span class="date">Sun · Jun 22 · 2026</span>Tokyo · two neighborhoods</div>
+        <div class="base-badge tokyo">Tokyo</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Choose two areas. Option A: Asakusa + Ueno.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Option B: Harajuku + Shibuya — Takeshita-dōri, then the scramble.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Shinjuku — night views from the Metropolitan Building, plus shopping.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Two areas is plenty for one day in Tokyo. Don't try to fit in a third.</div>
+      </div>
+    </article>
+
+    <!-- DAY 12 (Jun 23) -->
+    <article class="day" id="day-12">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 12</span>12</div>
+        <div class="day-title"><span class="date">Mon · Jun 23 · 2026</span>Day trip · Hakone</div>
+        <div class="base-badge tokyo">Tokyo</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Romancecar out to Hakone-Yumoto.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">The circuit — Hakone Ropeway, Lake Ashi, Fuji views if the weather holds.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Onsen soak, then the train back to Tokyo.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">The Hakone Freepass covers the ropeway, pirate ship, and local buses. Romancecar seats should be reserved.</div>
+      </div>
+    </article>
+
+    <!-- DAY 13 (Jun 24) -->
+    <article class="day" id="day-13">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 13</span>13</div>
+        <div class="day-title"><span class="date">Tue · Jun 24 · 2026</span>Tokyo DisneySea</div>
+        <div class="base-badge tokyo">Tokyo</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">DisneySea at rope-drop — hit the headliners first.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Work through lands; use Premier Access for anything with a 70+ min wait.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text">Night show, then the train back.</div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Buy tickets the moment they open (60 days out). DisneySea often sells out. Premier Access is day-of, in-app.</div>
+      </div>
+    </article>
+
+    <!-- DAY 14 (Jun 25) -->
+    <article class="day" id="day-14">
+      <header class="day-header">
+        <div class="day-num-big"><span class="prefix">Day 14</span>14</div>
+        <div class="day-title"><span class="date">Wed · Jun 25 · 2026</span>Departure</div>
+        <div class="base-badge travel">Transit → Home</div>
+      </header>
+      <div class="blocks">
+        <div class="block">
+          <div class="block-time">Morning</div>
+          <div class="block-text">Check out. Airport transfer.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Afternoon</div>
+          <div class="block-text">Fly home.</div>
+        </div>
+        <div class="block">
+          <div class="block-time">Evening</div>
+          <div class="block-text"><em>In transit</em></div>
+        </div>
+      </div>
+      <div class="notes">
+        <div class="notes-label">Reservation · Note</div>
+        <div class="notes-text">Morning flight. Narita Express or the Limousine Bus depending on which airport.</div>
+      </div>
+    </article>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span>Draft · v1 · prepared with love</span>
+  <span class="stamp">旅の栞</span>
+  <span>15 days · Japan · 2026</span>
+</footer>
+
+</body>
+</html>
